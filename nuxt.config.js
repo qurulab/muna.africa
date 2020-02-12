@@ -5,7 +5,8 @@ export default {
    */
   head: {
     title: process.env.npm_package_name || '',
-    meta: [{
+    meta: [
+      {
         charset: 'utf-8'
       },
       {
@@ -18,7 +19,8 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{
+    link: [
+      {
         rel: 'icon',
         type: 'image/x-icon',
         href: '/favicon.ico'
@@ -65,7 +67,8 @@ export default {
     [
       'nuxt-fontawesome',
       {
-        imports: [{
+        imports: [
+          {
             set: '@fortawesome/free-solid-svg-icons',
             icons: ['fas']
           },

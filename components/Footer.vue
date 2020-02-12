@@ -2,7 +2,7 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-3 col-sm-4">
+        <div class="col-md-3 col-sm-6 col-xs-6">
           <h6>Company</h6>
           <ul>
             <li><nuxt-link to="/">About Us</nuxt-link></li>
@@ -13,7 +13,7 @@
             <li><nuxt-link to="/">Faqs</nuxt-link></li>
           </ul>
         </div>
-        <div class="col-md-3 col-sm-4">
+        <div class="col-md-3 col-sm-6 col-xs-6">
           <h6>Product</h6>
           <ul>
             <li><nuxt-link to="/">About Us</nuxt-link></li>
@@ -21,14 +21,14 @@
             <li><nuxt-link to="/">Faqs</nuxt-link></li>
           </ul>
         </div>
-        <div class="col-md-3 col-sm-4">
+        <div class="col-md-3 col-sm-6 col-xs-6">
           <h6>Legal</h6>
           <ul>
             <li><nuxt-link to="/">Terms & Conditions</nuxt-link></li>
             <li><nuxt-link to="/">Policy</nuxt-link></li>
           </ul>
         </div>
-        <div class="col-md-3 col-sm-4">
+        <div class="col-md-3 col-sm-6 col-xs-6">
           <h6>Connect</h6>
           <ul>
             <li><nuxt-link to="/">About Us</nuxt-link></li>
@@ -64,22 +64,25 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-h6 {
-  color: #000639;
-  font-weight: bold;
-  padding-bottom: 1.2rem;
-}
-ul li a {
-  color: #000639;
-  font-size: 0.95rem;
-  opacity: 0.95;
-  line-height: 2.2;
-}
-.footer__bottom {
-  p {
-    font-size: 0.85rem;
-    line-height: 2;
-    color: #627081;
+footer {
+  padding-top: 4rem;
+  h6 {
+    color: #000639;
+    font-weight: bold;
+    padding-bottom: 1.2rem;
+  }
+  ul li a {
+    color: #000639;
+    font-size: 0.95rem;
+    opacity: 0.95;
+    line-height: 2.2;
+  }
+  .footer__bottom {
+    p {
+      font-size: 0.85rem;
+      line-height: 2;
+      color: #627081;
+    }
   }
 }
 </style>
