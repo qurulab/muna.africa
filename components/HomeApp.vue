@@ -3,9 +3,14 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-12  app__container">
-          <h3>Ready to buy or sell bitcoin?</h3>
-          <p>Register and get started now with Muna</p>
-          <nuxt-link to="/" class="register__btn">Get Started</nuxt-link>
+          <h3>
+            Powered by Waves Platform.
+          </h3>
+          <p>
+            Built exclusively on the Binance Chain for speed, affordability and
+            ultra-UX.
+          </p>
+          <nuxt-link to="/" class="register__btn">Read Whitepaper</nuxt-link>
         </div>
       </div>
     </div>

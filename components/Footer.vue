@@ -2,7 +2,7 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-3 col-sm-6 col-xs-6">
+        <!-- <div class="col-md-3 col-sm-6 col-xs-6">
           <h6>Company</h6>
           <ul>
             <li><nuxt-link to="/">About Us</nuxt-link></li>
@@ -12,28 +12,31 @@
             <li><nuxt-link to="/">Careers</nuxt-link></li>
             <li><nuxt-link to="/">Faqs</nuxt-link></li>
           </ul>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-6">
+        </div> -->
+        <div class="col-md-4">
           <h6>Product</h6>
           <ul>
-            <li><nuxt-link to="/">About Us</nuxt-link></li>
-            <li><nuxt-link to="/">Careers</nuxt-link></li>
-            <li><nuxt-link to="/">Faqs</nuxt-link></li>
+            <li><nuxt-link to="/">Neutrino</nuxt-link></li>
+            <li><nuxt-link to="/">API</nuxt-link></li>
+            <li><nuxt-link to="/">Staking</nuxt-link></li>
           </ul>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-6">
-          <h6>Legal</h6>
+        <div class="col-md-4">
+          <h6>KYC</h6>
           <ul>
-            <li><nuxt-link to="/">Terms & Conditions</nuxt-link></li>
-            <li><nuxt-link to="/">Policy</nuxt-link></li>
+            <li><nuxt-link to="/">AML</nuxt-link></li>
+            <li><nuxt-link to="/">Terms of Usage</nuxt-link></li>
+            <li><nuxt-link to="/">Privacy policy</nuxt-link></li>
           </ul>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="col-md-4">
           <h6>Connect</h6>
           <ul>
-            <li><nuxt-link to="/">About Us</nuxt-link></li>
-            <li><nuxt-link to="/">Careers</nuxt-link></li>
-            <li><nuxt-link to="/">Faqs</nuxt-link></li>
+            <li><nuxt-link to="/">Facebook</nuxt-link></li>
+            <li><nuxt-link to="/">Twitter</nuxt-link></li>
+            <li><nuxt-link to="/">Instagram</nuxt-link></li>
+            <li><nuxt-link to="/">Blog</nuxt-link></li>
+            <li><nuxt-link to="/">Telegram</nuxt-link></li>
           </ul>
         </div>
       </div>

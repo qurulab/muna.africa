@@ -27,7 +27,7 @@ export default {
       },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Poppins&display=swap'
+        href: 'https://fonts.googleapis.com/css?family=Comfortaa&display=swap'
       }
     ]
   },

@@ -5,34 +5,53 @@
         <div class="col-12 text-center">
           <h2>Why Muna?</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
-            facere.
+            See what makes Muna Wallet stand out
           </p>
         </div>
       </div>
       <div class="about__wrapper">
         <div class="about__card">
-          <h4>Customer experience.</h4>
+          <h4>Safe and Secure</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui alias
-            debitis architecto necessitatibus. Beatae accusantium facere eum
-            ipsum totam iusto recusandae ab temporibus architecto odio.
+            Muna systems are built on industry-standard with multisig escrow
+            accounts to ensure that funds/assets are safe.
           </p>
         </div>
         <div class="about__card">
-          <h4>Speed and Efficiency.</h4>
+          <h4>Low fees</h4>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
-            accusantium asperiores eaque vitae molestias obcaecati at beatae,
-            earum incidunt velit veritatis corrupti illo dolorum eos.
+            Fees are reasonable and fair in every way. Fees are flat
+            irrespective of quantity or location.
           </p>
         </div>
         <div class="about__card">
-          <h4>No hidden carges.</h4>
+          <h4>P2P</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
-            distinctio! Nostrum nemo saepe ducimus tempora, eum totam facilis ea
-            ut sapiente nihil sit omnis dolor.
+            Transactions on the Muna Wallet are peer-to-peer without the
+            interception of a financial institution.
+          </p>
+        </div>
+        <div class="about__card">
+          <h4>Africa Focused</h4>
+          <p>
+            Enabling Africans send and receive money within Africa and across.
+            Africans in diapora can send money to family a home directly from
+            their Muna Wallet.
+          </p>
+        </div>
+        <div class="about__card">
+          <h4>Stable coin</h4>
+          <p>
+            Muna supports stable coins pegged to African local currencies which
+            are not open to crypto volatility. Value doesn’t drop.
+          </p>
+        </div>
+        <div class="about__card">
+          <h4>Quality Support</h4>
+          <p>
+            24/7 support service. Send a mail. Place a call or join our telegram
+            group.
+
           </p>
         </div>
       </div>
@@ -56,7 +75,7 @@ export default {}
   }
   .about__wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 20px;
     margin: 2rem auto;
     // text-align: center;
