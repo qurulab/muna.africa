@@ -3,11 +3,11 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h1>Buy & Sell Bitcoin, Ethereum and more</h1>
+          <h1>Stable Coin Wallet, Send, Receive and Stake.</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque illum
-            odit ipsam distinctio ut facere, amet labore nulla, tempore
-            quibusdam nam sequi quia explicabo soluta.
+            Muna Wallet is the easiest way to store, send and receive stable
+            coins across Africa.. Stake your crypto and earn interest upto 12%
+            per year.
           </p>
           <nuxt-link to="/" class="hero__btn"
             >Get Started&nbsp;&nbsp;

@@ -5,9 +5,6 @@
         <!-- <div class="col-md-1"></div> -->
         <div class="col-md-12">
           <h2 class="text-center">You don't need to be an expert to begin</h2>
-          <p class="text-center">
-            Our process is very simple and you can begin in 3 easy steps
-          </p>
           <div class="process__wrapper">
             <div class="process__card">
               <div class="card__border__img">
@@ -22,11 +19,10 @@
                 class="img-fluid icons"
                 alt="Register image"
               /> -->
-              <h3>Create a free account</h3>
+              <h3>Create Account</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Architecto error laborum quae consequuntur corporis dolores
-                aliquam.
+                Get started on our platform in minutes with our easy step by
+                step, hassle-free sign up procedure.
               </p>
             </div>
             <div class="process__card">
@@ -42,11 +38,11 @@
                 class="img-fluid icons"
                 alt="Register image"
               /> -->
-              <h3>Create a free account</h3>
+              <h3>Send and Receive</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Nesciunt, facere ut. Laborum ea vero totam impedit ducimus fugit
-                quasi ab?
+                Once your account is setup, you can deposit funds into your
+                wallet and start trading. Your funds are safe and you have
+                nothing to worry about.
               </p>
             </div>
             <div class="process__card">
@@ -62,11 +58,9 @@
                 class="img-fluid icons"
                 alt="Register image"
               /> -->
-              <h3>Create a free account</h3>
+              <h3>Withdraw to Bank Account</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
-                porro enim natus sequi alias iusto eaque quasi earum,
-                perferendis
+                Move your funds from and into your local bank account.
               </p>
             </div>
           </div>
