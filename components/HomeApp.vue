@@ -22,13 +22,15 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/styles/colors';
 .app {
   padding: 4rem 0;
   .app__container {
-    background: #000639;
+    background: linear-gradient(to left, $primary-color, #5ccf55);
     color: #fff;
     padding: 5rem 2rem;
     border-radius: 20px;
+    margin: 0 1.5rem;
     text-align: center;
     box-shadow: 0 59px 51px -34px rgba(0, 6, 57, 0.2);
     h3 {
@@ -40,14 +42,15 @@ export default {}
       opacity: 0.7;
     }
     .register__btn {
-      background: transparent;
-      padding: 1rem 3rem;
-      border-radius: 3px;
-      color: #fff;
+      background: #fff;
+      padding: 1.3rem 4rem;
+      border-radius: 4px;
+      color: #545454;
       border: 1px solid #f4f4f4;
       text-decoration: none;
       font-size: 0.9rem;
-      opacity: 0.8;
+      // opacity: 0.9;
+      font-weight: bold;
     }
   }
 }

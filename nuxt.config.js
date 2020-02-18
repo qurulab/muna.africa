@@ -16,7 +16,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: 'Stable coin wallet, send, receive and stake'
       }
     ],
     link: [
@@ -40,7 +40,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@/assets/styles/reset.scss'],
+  css: ['@/assets/styles/reset.scss', '@/assets/styles/colors.scss'],
   /*
    ** Plugins to load before mounting the App
    */
