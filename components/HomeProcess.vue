@@ -14,11 +14,11 @@
                   alt=""
                 />
               </div>
-              <!-- <img
+              <img
                 src="../assets/images/register.svg"
                 class="img-fluid icons"
                 alt="Register image"
-              /> -->
+              />
               <h3>Create Account</h3>
               <p>
                 Get started on our platform in minutes with our easy step by
@@ -33,11 +33,11 @@
                   alt=""
                 />
               </div>
-              <!-- <img
-                src="../assets/images/debit.svg"
+              <img
+                src="../assets/images/wallet.svg"
                 class="img-fluid icons"
                 alt="Register image"
-              /> -->
+              />
               <h3>Send and Receive</h3>
               <p>
                 Once your account is setup, you can deposit funds into your
@@ -53,11 +53,11 @@
                   alt=""
                 />
               </div>
-              <!-- <img
-                src="../assets/images/register.svg"
+              <img
+                src="../assets/images/bag.png"
                 class="img-fluid icons"
                 alt="Register image"
-              /> -->
+              />
               <h3>Withdraw to Bank Account</h3>
               <p>
                 Move your funds from and into your local bank account.
@@ -76,6 +76,7 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/styles/colors';
 .process {
   margin-top: 5rem;
   padding: 5rem 0;
@@ -83,11 +84,11 @@ export default {}
   position: relative;
   h2 {
     text-transform: capitalize;
-    color: #000639;
+    color: #403e54;
     font-weight: bold;
   }
   p {
-    color: #000639;
+    color: #545454;
   }
   .process__wrapper {
     display: grid;
@@ -96,7 +97,7 @@ export default {}
     margin-top: 4rem;
     .process__card {
       background: #fff;
-      padding: 4rem 2rem;
+      padding: 3rem 2rem;
       border-radius: 4px;
       position: relative;
       .card__border__img {
@@ -109,21 +110,22 @@ export default {}
         }
       }
       .icons {
-        max-width: 50px;
+        max-width: 40px;
         height: auto;
-        padding-bottom: 0.5rem;
+        padding-bottom: 0.8rem;
       }
       h3 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         padding: 0.5rem 0;
         font-weight: bold;
-        color: #000639;
+        color: #403e54;
       }
       p {
-        font-size: 0.85rem;
+        font-size: 0.87rem;
         // opacity: 0.7;
         line-height: 1.8;
-        color: #000639;
+        color: #545454;
+        padding-top: 0.5rem;
       }
     }
   }

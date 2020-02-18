@@ -16,7 +16,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: 'Stable coin wallet, send, receive and stake'
       }
     ],
     link: [

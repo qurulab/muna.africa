@@ -11,6 +11,7 @@
       </div>
       <div class="about__wrapper">
         <div class="about__card">
+          <img src="../assets/images/lock.png" class="icons" />
           <h4>Safe and Secure</h4>
           <p>
             Muna systems are built on industry-standard with multisig escrow
@@ -18,6 +19,7 @@
           </p>
         </div>
         <div class="about__card">
+          <img src="../assets/images/price.svg" class="icons" />
           <h4>Low fees</h4>
           <p>
             Fees are reasonable and fair in every way. Fees are flat
@@ -25,6 +27,7 @@
           </p>
         </div>
         <div class="about__card">
+          <img src="../assets/images/peer.png" class="icons" />
           <h4>P2P</h4>
           <p>
             Transactions on the Muna Wallet are peer-to-peer without the
@@ -32,6 +35,7 @@
           </p>
         </div>
         <div class="about__card">
+          <img src="../assets/images/map.svg" class="icons" />
           <h4>Africa Focused</h4>
           <p>
             Enabling Africans send and receive money within Africa and across.
@@ -40,6 +44,7 @@
           </p>
         </div>
         <div class="about__card">
+          <img src="../assets/images/stable.svg" class="icons" />
           <h4>Stable coin</h4>
           <p>
             Muna supports stable coins pegged to African local currencies which
@@ -47,6 +52,7 @@
           </p>
         </div>
         <div class="about__card">
+          <img src="../assets/images/support.png" class="icons" />
           <h4>Quality Support</h4>
           <p>
             24/7 support service. Send a mail. Place a call or join our telegram
@@ -66,28 +72,36 @@ export default {}
 .about {
   padding: 5rem 0;
   h2 {
-    color: #000639;
+    color: #403e54;
     font-weight: bold;
   }
   p {
-    color: #000639;
+    color: #545454;
   }
   .about__wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
     margin: 2rem auto;
-    // text-align: center;
-    h4 {
-      font-size: 1.3rem;
-      color: #000639;
-      padding-bottom: 1rem;
-      font-weight: bold;
-    }
-    p {
-      font-size: 0.95rem;
-      color: #000639;
-      opacity: 0.8;
+    text-align: center;
+    .about__card {
+      h4 {
+        font-size: 1.3rem;
+        color: #403e54;
+        padding-bottom: 0.7rem;
+        font-weight: bold;
+      }
+      p {
+        font-size: 0.93rem;
+        color: #545454;
+        opacity: 0.9;
+        line-height: 1.7;
+      }
+      .icons {
+        max-width: 40px;
+        height: auto;
+        padding-bottom: 1.5rem;
+      }
     }
   }
 }

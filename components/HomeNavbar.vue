@@ -5,9 +5,9 @@
         class="navbar__contents d-flex justify-content-between align-items-center"
       >
         <div class="navbar__logo">
-          <h5><nuxt-link to="/" class="logo">Muna Project</nuxt-link></h5>
+          <h5><nuxt-link to="/" class="logo">Muna Africa</nuxt-link></h5>
         </div>
-        <ul class="d-flex justify-content-between pt-3">
+        <ul class="nav__links d-flex justify-content-between pt-3">
           <li><nuxt-link to="/">Our Features</nuxt-link></li>
           <li><nuxt-link to="/">Blog</nuxt-link></li>
           <li><nuxt-link to="/">Our Team</nuxt-link></li>
@@ -15,7 +15,7 @@
           <li><nuxt-link to="/">Contact Us</nuxt-link></li>
           <li><nuxt-link to="/" class="signin--link">Sign In</nuxt-link></li>
         </ul>
-        <div class="navbar__toggler">
+        <div @click.once.prevent="toggleNav()" class="navbar__toggler">
           <font-awesome-icon :icon="['fa', 'bars']" />
         </div>
       </div>
@@ -24,7 +24,17 @@
 </template>
 
 <script>
-export default {}
+export default {
+  methods: {
+    toggleNav() {
+      const navbarToggler = document.querySelector('.navbar__toggler')
+      const nav = document.querySelector('.nav__links')
+      navbarToggler.addEventListener('click', () => {
+        nav.classList.toggle('open__nav')
+      })
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -60,23 +70,28 @@ nav {
   }
   .navbar__toggler {
     display: none;
+    cursor: pointer;
   }
 }
 
 //MEDIA QUERIES
 @media only screen and (max-width: 990px) {
-  ul {
-    background: #000639;
+  .nav__links {
+    background: #000;
     position: absolute;
     top: 100%;
-    right: 30px;
-    padding: 3rem;
+    padding: 4rem 2.5rem;
+    right: 8%;
     flex-direction: column;
     border-radius: 3px;
     display: none !important;
     li a {
       line-height: 4;
     }
+  }
+  .open__nav {
+    display: block !important;
+    transition: all ease-in-out 0.5s;
   }
   .navbar__toggler {
     display: block !important;

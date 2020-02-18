@@ -1,46 +1,35 @@
 <template>
   <footer>
     <div class="container">
-      <div class="row">
-        <!-- <div class="col-md-3 col-sm-6 col-xs-6">
-          <h6>Company</h6>
+      <div class="footer__contents">
+        <div class="footer__card">
+          <h6>Products</h6>
           <ul>
-            <li><nuxt-link to="/">About Us</nuxt-link></li>
-            <li><nuxt-link to="/">Careers</nuxt-link></li>
-            <li><nuxt-link to="/">Faqs</nuxt-link></li>
-            <li><nuxt-link to="/">About Us</nuxt-link></li>
-            <li><nuxt-link to="/">Careers</nuxt-link></li>
-            <li><nuxt-link to="/">Faqs</nuxt-link></li>
-          </ul>
-        </div> -->
-        <div class="col-md-4">
-          <h6>Product</h6>
-          <ul>
-            <li><nuxt-link to="/">Neutrino</nuxt-link></li>
+            <li><nuxt-link to="/">Neutrino Stable coin</nuxt-link></li>
             <li><nuxt-link to="/">API</nuxt-link></li>
-            <li><nuxt-link to="/">Staking</nuxt-link></li>
+            <li><nuxt-link to="/">Stalking</nuxt-link></li>
           </ul>
         </div>
-        <div class="col-md-4">
-          <h6>KYC</h6>
+        <div class="footer__card">
+          <h6>Legal</h6>
           <ul>
+            <li><nuxt-link to="/">KYC</nuxt-link></li>
             <li><nuxt-link to="/">AML</nuxt-link></li>
-            <li><nuxt-link to="/">Terms of Usage</nuxt-link></li>
-            <li><nuxt-link to="/">Privacy policy</nuxt-link></li>
+            <li><nuxt-link to="/">Terms of usage</nuxt-link></li>
+            <li><nuxt-link to="/">Privacy Policy</nuxt-link></li>
           </ul>
         </div>
-        <div class="col-md-4">
-          <h6>Connect</h6>
+        <div class="footer__card">
+          <h6>Connect with us</h6>
           <ul>
-            <li><nuxt-link to="/">Facebook</nuxt-link></li>
-            <li><nuxt-link to="/">Twitter</nuxt-link></li>
-            <li><nuxt-link to="/">Instagram</nuxt-link></li>
-            <li><nuxt-link to="/">Blog</nuxt-link></li>
-            <li><nuxt-link to="/">Telegram</nuxt-link></li>
+            <li><nuxt-link to="/">KYC</nuxt-link></li>
+            <li><nuxt-link to="/">AML</nuxt-link></li>
+            <li><nuxt-link to="/">Terms of usage</nuxt-link></li>
+            <li><nuxt-link to="/">Privacy Policy</nuxt-link></li>
           </ul>
         </div>
       </div>
-      <div class="row pt-3 footer__bottom">
+      <div class="row pt-5 footer__bottom">
         <div class="col-12">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis
@@ -69,22 +58,29 @@ export default {}
 <style lang="scss" scoped>
 footer {
   padding-top: 4rem;
-  h6 {
-    color: #000639;
-    font-weight: bold;
-    padding-bottom: 1.2rem;
-  }
-  ul li a {
-    color: #000639;
-    font-size: 0.95rem;
-    opacity: 0.95;
-    line-height: 2.2;
+  .footer__contents {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 30px;
+    .footer__card {
+      h6 {
+        color: #403e54;
+        font-weight: bold;
+        padding-bottom: 1.2rem;
+      }
+      ul li a {
+        color: #545454;
+        font-size: 0.85rem;
+        opacity: 0.95;
+        line-height: 2.2;
+      }
+    }
   }
   .footer__bottom {
     p {
       font-size: 0.85rem;
       line-height: 2;
-      color: #627081;
+      color: #545454;
     }
   }
 }
