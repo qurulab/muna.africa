@@ -28,6 +28,7 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/styles/colors';
 nav {
   padding: 0.8rem 0;
   //   box-shadow: 3px 0 5px rgba(0, 0, 0, 0.15);
@@ -44,14 +45,14 @@ nav {
     li a {
       text-decoration: none;
       margin: 0 0.9rem;
-      color: #000639;
+      color: $primary-color;
       font-weight: bold;
       opacity: 0.9;
       font-size: 0.9rem;
     }
     .signin--link {
       border-radius: 3px;
-      background: #000639;
+      background: $primary-color;
       color: #fff;
       padding: 1rem 2.3rem;
       font-weight: normal;

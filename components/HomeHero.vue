@@ -2,7 +2,7 @@
   <section class="hero container-fluid">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-lg-6 col-md-12 col-sm-812 col-xs-12">
           <h1>Stable Coin Wallet, Send, Receive and Stake.</h1>
           <p>
             Muna Wallet is the easiest way to store, send and receive stable
@@ -14,7 +14,7 @@
           </nuxt-link>
         </div>
         <div class="col-md-1 col-lg-1"></div>
-        <div class="col-md-5 img__holder">
+        <div class="col-lg-5 col-sm-12 col-xs-12 img__holder">
           <img
             src="../assets/images/img2.svg"
             class="img-fluid hero--img"
@@ -31,8 +31,9 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/styles/colors';
 .hero {
-  padding: 16rem 0;
+  padding: 13rem 0;
   background: #fff;
   height: 100vh;
   h1 {
@@ -40,16 +41,16 @@ export default {}
     font-size: 2.5rem;
     padding-bottom: 2rem;
     line-height: 1.5;
-    color: #000639;
+    color: #2b2b2b;
   }
   p {
     opacity: 0.8;
     padding-bottom: 2rem;
     line-height: 1.8;
-    color: #000639;
+    color: #2b2b2b;
   }
   .hero__btn {
-    background: #000639;
+    background: $primary-color;
     padding: 1.3rem 4.5rem;
     border-radius: 3px;
     text-decoration: none;

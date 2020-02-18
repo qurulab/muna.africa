@@ -77,6 +77,7 @@ export default {}
 
 <style lang="scss" scoped>
 .process {
+  margin-top: 5rem;
   padding: 5rem 0;
   background: #f4f8fc;
   position: relative;

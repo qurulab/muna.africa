@@ -40,7 +40,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@/assets/styles/reset.scss'],
+  css: ['@/assets/styles/reset.scss', '@/assets/styles/colors.scss'],
   /*
    ** Plugins to load before mounting the App
    */
