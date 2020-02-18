@@ -57,7 +57,6 @@
           <p>
             24/7 support service. Send a mail. Place a call or join our telegram
             group.
-
           </p>
         </div>
       </div>
