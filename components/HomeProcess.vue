@@ -130,4 +130,14 @@ export default {}
     }
   }
 }
+
+//MEDIA QUERIES
+@media only screen and (max-width: 600px) {
+  .process {
+    h2 {
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
+  }
+}
 </style>

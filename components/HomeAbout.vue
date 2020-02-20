@@ -14,8 +14,8 @@
           <img src="../assets/images/lock.png" class="icons" />
           <h4>Safe and Secure</h4>
           <p>
-            Muna systems are built on industry-standard with multisig escrow
-            accounts to ensure that funds/assets are safe.
+            Muna systems are built on industry-standard with multi sign-in
+            escrow accounts to ensure that funds/assets are safe.
           </p>
         </div>
         <div class="about__card">
@@ -39,8 +39,8 @@
           <h4>Africa Focused</h4>
           <p>
             Enabling Africans send and receive money within Africa and across.
-            Africans in diapora can send money to family a home directly from
-            their Muna Wallet.
+            Africans in diaspora can send money to their families at home
+            directly from their Muna Wallet.
           </p>
         </div>
         <div class="about__card">

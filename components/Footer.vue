@@ -81,7 +81,17 @@ footer {
       font-size: 0.85rem;
       line-height: 2;
       color: #545454;
+      opacity: 0.8;
     }
+  }
+}
+
+//MEDIA QUERIES
+@media only screen and (max-width: 600px) {
+  .footer__contents {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) !important;
+    grid-gap: 10px;
+    justify-items: center;
   }
 }
 </style>
