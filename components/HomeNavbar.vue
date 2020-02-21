@@ -5,7 +5,7 @@
         class="navbar__contents d-flex justify-content-between align-items-center"
       >
         <div class="navbar__logo">
-          <h5><nuxt-link to="/" class="logo">Muna Africa</nuxt-link></h5>
+          <h5><nuxt-link to="/" class="logo">Muna</nuxt-link></h5>
         </div>
         <ul class="nav__links d-flex justify-content-between pt-3">
           <li><nuxt-link to="/">Our Features</nuxt-link></li>
@@ -77,14 +77,17 @@ nav {
 //MEDIA QUERIES
 @media only screen and (max-width: 990px) {
   .nav__links {
-    background: #000;
+    background: #333;
     position: absolute;
     top: 100%;
     padding: 4rem 2.5rem;
-    right: 8%;
+    left: 0;
     flex-direction: column;
     border-radius: 3px;
     display: none !important;
+    transition: all ease-in 0.5;
+    height: 100vh;
+    width: 100%;
     li a {
       line-height: 4;
     }

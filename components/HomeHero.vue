@@ -6,7 +6,7 @@
           <h1>Stable Coin Wallet, Send, Receive and Stake.</h1>
           <p>
             Muna Wallet is the easiest way to store, send and receive stable
-            coins across Africa.. Stake your crypto and earn interest upto 12%
+            coins across Africa. Stake your crypto and earn interest upto 12%
             per year.
           </p>
           <nuxt-link to="/" class="hero__btn">Get Started </nuxt-link>
