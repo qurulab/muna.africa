@@ -8,10 +8,10 @@
           <h5><nuxt-link to="/" class="logo">Muna</nuxt-link></h5>
         </div>
         <ul class="nav__links d-flex justify-content-between pt-3">
-          <li><nuxt-link to="/">Our Features</nuxt-link></li>
-          <li><nuxt-link to="/">Blog</nuxt-link></li>
-          <li><nuxt-link to="/">Our Team</nuxt-link></li>
-          <li><nuxt-link to="/">Get Started</nuxt-link></li>
+          <li><nuxt-link to="#features">Features</nuxt-link></li>
+          <li>
+            <a href="https://medium.com/auctionlance" target="_blank">Blog</a>
+          </li>
           <li><nuxt-link to="/">Contact Us</nuxt-link></li>
           <li><nuxt-link to="/" class="signin--link">Sign In</nuxt-link></li>
         </ul>
