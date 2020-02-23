@@ -1,5 +1,5 @@
 <template>
-  <section class="about container-fluid">
+  <section id="features" class="about container-fluid">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -44,7 +44,7 @@
           </p>
         </div>
         <div class="about__card">
-          <img src="../assets/images/stable.svg" class="icons" />
+          <img src="../assets/images/stable.png" class="icons" />
           <h4>Stable coin</h4>
           <p>
             Muna supports stable coins pegged to African local currencies which

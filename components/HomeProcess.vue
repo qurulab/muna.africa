@@ -1,133 +1,128 @@
 <template>
-  <section class="process">
+  <div class="process">
     <div class="container">
       <div class="row">
-        <!-- <div class="col-md-1"></div> -->
-        <div class="col-md-12">
-          <h2 class="text-center">You don't need to be an expert to begin</h2>
-          <div class="process__wrapper">
-            <div class="process__card">
-              <div class="card__border__img">
-                <img
-                  src="../assets/images/half-maze-gray.png"
-                  class="border--img"
-                  alt=""
-                />
-              </div>
-              <img
-                src="../assets/images/register.svg"
-                class="img-fluid icons"
-                alt="Register image"
-              />
-              <h3>Create Account</h3>
-              <p>
-                Get started on our platform in minutes with our easy step by
-                step, hassle-free sign up procedure.
-              </p>
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="row text-center">
+            <div class="col-md-6">
+              <button @click="buyer == buyer">Buyer</button>
+              <hr />
             </div>
-            <div class="process__card">
-              <div class="card__border__img">
-                <img
-                  src="../assets/images/half-maze-orange.png"
-                  class="border--img"
-                  alt=""
-                />
-              </div>
-              <img
-                src="../assets/images/wallet.svg"
-                class="img-fluid icons"
-                alt="Register image"
-              />
-              <h3>Send and Receive</h3>
-              <p>
-                Once your account is setup, you can deposit funds into your
-                wallet and start trading. Your funds are safe and you have
-                nothing to worry about.
-              </p>
+            <div class="col-md-6">
+              <button @click="seller == seller">Seller</button>
+              <hr />
             </div>
-            <div class="process__card">
-              <div class="card__border__img">
-                <img
-                  src="../assets/images/half-maze-green.png"
-                  class="border--img"
-                  alt=""
-                />
-              </div>
-              <img
-                src="../assets/images/bag.png"
-                class="img-fluid icons"
-                alt="Register image"
-              />
-              <h3>Withdraw to Bank Account</h3>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+      <div id="buyer" v-if="buyer" class="row text-center">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <p class="pt-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            pariatur libero tempore. Sit recusandae magnam ratione vel, repellat
+            veritatis sint?
+          </p>
+          <div class="row pt-5">
+            <div class="col-md-4">
+              <img src="../assets/images/order.png" class="icons" alt="" />
+              <h6>Step 1</h6>
+              <h5>PLACE AN ORDER</h5>
+              <p>You'll be auto-matched with a seller instantly</p>
+            </div>
+            <div class="col-md-4">
+              <img src="../assets/images/debit.svg" class="icons" alt="" />
+              <h6>Step 2</h6>
+              <h5>PAY DIRECTLY TO SELLER</h5>
+              <p>The seller will confirm your payment</p>
+            </div>
+            <div class="col-md-4">
+              <img src="../assets/images/debit.svg" class="icons" alt="" />
+              <h6>Step 3</h6>
+              <h5>MUNA RELEASES THE ESCROWED USDT</h5>
               <p>
-                Move your funds from and into your local bank account.
+                It makes Muna P2P a safe and fast method to convert fiat to
+                crypto
               </p>
             </div>
           </div>
         </div>
-        <!-- <div class="col-md-1"></div> -->
+        <div class="col-md-1"></div>
+      </div>
+
+      <div id="seller" v-if="seller" class="row text-center">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          SELLER
+          <div class="row pt-5">
+            <div class="col-md-4">
+              <img src="../assets/images/debit.svg" class="icons" alt="" />
+              <h6>Step 1</h6>
+              <h5>PLACE AN ORDER</h5>
+              <p>You'll be auto-matched with a seller instantly</p>
+            </div>
+            <div class="col-md-4">
+              <img src="../assets/images/debit.svg" class="icons" alt="" />
+              <h6>Step 2</h6>
+              <h5>PAY DIRECTLY TO SELLER</h5>
+              <p>The seller will confirm your payment</p>
+            </div>
+            <div class="col-md-4">
+              <img src="../assets/images/debit.svg" class="icons" alt="" />
+              <h6>Step 3</h6>
+              <h5>MUNA RELEASES THE ESCROWED USDT</h5>
+              <p>
+                It makes Muna P2P a safe and fast method to convert fiat to
+                crypto
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      buyer: true,
+      seller: false
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/styles/colors';
 .process {
-  margin-top: 5rem;
-  padding: 5rem 0;
-  background: #f4f8fc;
-  position: relative;
-  h2 {
-    text-transform: capitalize;
-    color: #403e54;
+  background: #f6f7ff;
+  padding: 4rem 0;
+  .icons {
+    max-width: 60px;
+    height: auto;
+  }
+  h6 {
+    font-size: 0.8rem;
+    color: #454545;
+    background: #fff;
+    padding: 0.4rem 1rem;
     font-weight: bold;
+    width: 40%;
+    margin: 1.3rem auto;
+    border-radius: 2px;
+  }
+  h5 {
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 0.5rem 0;
   }
   p {
+    font-size: 1rem;
     color: #545454;
-  }
-  .process__wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 20px;
-    margin-top: 4rem;
-    .process__card {
-      background: #fff;
-      padding: 3rem 2rem;
-      border-radius: 4px;
-      position: relative;
-      .card__border__img {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        .border--img {
-          max-width: 80px;
-          height: auto;
-        }
-      }
-      .icons {
-        max-width: 40px;
-        height: auto;
-        padding-bottom: 0.8rem;
-      }
-      h3 {
-        font-size: 1.2rem;
-        padding: 0.5rem 0;
-        font-weight: bold;
-        color: #403e54;
-      }
-      p {
-        font-size: 0.87rem;
-        // opacity: 0.7;
-        line-height: 1.8;
-        color: #545454;
-        padding-top: 0.5rem;
-      }
-    }
   }
 }
 
