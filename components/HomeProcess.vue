@@ -6,18 +6,18 @@
         <div class="col-md-10">
           <div class="row text-center">
             <div class="col-md-6">
-              <button @click="buyer == buyer">Buyer</button>
+              <button ref="buyer" @click="toggleShowBuyer()">Buyer</button>
               <hr />
             </div>
             <div class="col-md-6">
-              <button @click="seller == seller">Seller</button>
+              <button @click="toggleShowBuyer()">Seller</button>
               <hr />
             </div>
           </div>
         </div>
         <div class="col-md-1"></div>
       </div>
-      <div id="buyer" v-if="buyer" class="row text-center">
+      <div id="buyer" v-if="showBuyerFlow" class="row text-center">
         <div class="col-md-1"></div>
         <div class="col-md-10">
           <p class="pt-2">
@@ -52,7 +52,7 @@
         <div class="col-md-1"></div>
       </div>
 
-      <div id="seller" v-if="seller" class="row text-center">
+      <div id="seller" v-else class="row text-center">
         <div class="col-md-1"></div>
         <div class="col-md-10">
           SELLER
@@ -90,8 +90,17 @@
 export default {
   data() {
     return {
-      buyer: true,
-      seller: false
+      showBuyerFlow: true
+    }
+  },
+  methods: {
+    toggleShowBuyer() {
+      // NOTE To Achilles: here I am using event.target which would tell you the element that was clicked and is calling this method. And since I added a ref called buyer on the button with the value of buyer, I am simply checking it the button that was clicked is the same as the button with the ref called buyer. If it is then the boolean showBuyerFlow remains true. But if its not it becomes false. Hope that makes sense. You can delete after reading it.
+      if (event.target === this.$refs.buyer) {
+        this.showBuyerFlow = true
+        return
+      }
+      this.showBuyerFlow = false
     }
   }
 }
