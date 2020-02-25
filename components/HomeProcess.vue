@@ -5,13 +5,25 @@
         <div class="col-md-1"></div>
         <div class="col-md-10">
           <div class="row text-center">
-            <div class="col-md-6">
-              <button ref="buyer" @click="toggleShowBuyer()">Buyer</button>
-              <hr />
+            <div class="col-md-6 col-sm-2 colxs-2">
+              <h3
+                ref="buyer"
+                v-bin
+                @click="toggleShowBuyer()"
+                v-bind:class="{ present: present }"
+                class="holder buyer__holder"
+              >
+                Buyer
+              </h3>
             </div>
-            <div class="col-md-6">
-              <button @click="toggleShowBuyer()">Seller</button>
-              <hr />
+            <div class="col-md-6 col-sm-3">
+              <h3
+                @click="toggleShowBuyer()"
+                v-bind:class="{ present: !present }"
+                class="holder seller__holder"
+              >
+                Seller
+              </h3>
             </div>
           </div>
         </div>
@@ -20,11 +32,10 @@
       <div id="buyer" v-if="showBuyerFlow" class="row text-center">
         <div class="col-md-1"></div>
         <div class="col-md-10">
-          <p class="pt-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-            pariatur libero tempore. Sit recusandae magnam ratione vel, repellat
-            veritatis sint?
-          </p>
+          <h4 class="pt-4">
+            Muna P2P helps you convert your money to crypto instantly where
+            Waziri acts as an escrow for safekeeping the transaction
+          </h4>
           <div class="row pt-5">
             <div class="col-md-4">
               <img src="../assets/images/order.png" class="icons" alt="" />
@@ -33,13 +44,13 @@
               <p>You'll be auto-matched with a seller instantly</p>
             </div>
             <div class="col-md-4">
-              <img src="../assets/images/debit.svg" class="icons" alt="" />
+              <img src="../assets/images/bag.png" class="icons" alt="" />
               <h6>Step 2</h6>
               <h5>PAY DIRECTLY TO SELLER</h5>
               <p>The seller will confirm your payment</p>
             </div>
             <div class="col-md-4">
-              <img src="../assets/images/debit.svg" class="icons" alt="" />
+              <img src="../assets/images/wallet.svg" class="icons" alt="" />
               <h6>Step 3</h6>
               <h5>MUNA RELEASES THE ESCROWED USDT</h5>
               <p>
@@ -55,7 +66,10 @@
       <div id="seller" v-else class="row text-center">
         <div class="col-md-1"></div>
         <div class="col-md-10">
-          SELLER
+          <h4 class="pt-4">
+            Muna P2P helps you convert your money to crypto instantly where
+            Waziri acts as an escrow for safekeeping the transaction
+          </h4>
           <div class="row pt-5">
             <div class="col-md-4">
               <img src="../assets/images/debit.svg" class="icons" alt="" />
@@ -90,7 +104,9 @@
 export default {
   data() {
     return {
-      showBuyerFlow: true
+      showBuyerFlow: true,
+      active: true,
+      present: true
     }
   },
   methods: {
@@ -98,9 +114,12 @@ export default {
       // NOTE To Achilles: here I am using event.target which would tell you the element that was clicked and is calling this method. And since I added a ref called buyer on the button with the value of buyer, I am simply checking it the button that was clicked is the same as the button with the ref called buyer. If it is then the boolean showBuyerFlow remains true. But if its not it becomes false. Hope that makes sense. You can delete after reading it.
       if (event.target === this.$refs.buyer) {
         this.showBuyerFlow = true
+        this.present = true
         return
       }
       this.showBuyerFlow = false
+
+      this.present = false
     }
   }
 }
@@ -108,8 +127,21 @@ export default {
 
 <style lang="scss" scoped>
 .process {
-  background: #f6f7ff;
+  background: #fafafa;
   padding: 4rem 0;
+  h3 {
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+  h4 {
+    color: #454545;
+  }
+  .holder {
+    cursor: pointer !important;
+  }
+  // .buyer__holder {
+  //   border-bottom: 2px solid #57ac52;
+  // }
   .icons {
     max-width: 60px;
     height: auto;
@@ -132,6 +164,9 @@ export default {
   p {
     font-size: 1rem;
     color: #545454;
+  }
+  .present {
+    border-bottom: 2px solid #57ac52;
   }
 }
 
