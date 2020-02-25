@@ -5,7 +5,7 @@
         <div class="col-md-1"></div>
         <div class="col-md-10">
           <div class="row text-center">
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-2 col-xs-2">
               <h3
                 ref="buyer"
                 v-bin
@@ -16,7 +16,7 @@
                 Buyer
               </h3>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-2 col-xs-2">
               <h3
                 @click="toggleShowBuyer()"
                 v-bind:class="{ present: !present }"
