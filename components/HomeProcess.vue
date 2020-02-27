@@ -1,33 +1,23 @@
 <template>
   <div class="process">
     <div class="container">
-      <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-10">
-          <div class="row text-center">
-            <div class="col-md-6 col-sm-2 colxs-2">
-              <h3
-                ref="buyer"
-                v-bin
-                @click="toggleShowBuyer()"
-                v-bind:class="{ present: present }"
-                class="holder buyer__holder"
-              >
-                Buyer
-              </h3>
-            </div>
-            <div class="col-md-6 col-sm-3">
-              <h3
-                @click="toggleShowBuyer()"
-                v-bind:class="{ present: !present }"
-                class="holder seller__holder"
-              >
-                Seller
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-1"></div>
+      <div class="row__divider">
+        <h3
+          ref="buyer"
+          v-bin
+          @click="toggleShowBuyer()"
+          v-bind:class="{ present: present }"
+          class="holder buyer__holder"
+        >
+          Buyer
+        </h3>
+        <h3
+          @click="toggleShowBuyer()"
+          v-bind:class="{ present: !present }"
+          class="holder seller__holder"
+        >
+          Seller
+        </h3>
       </div>
       <div id="buyer" v-if="showBuyerFlow" class="row text-center">
         <div class="col-md-1"></div>
@@ -136,6 +126,12 @@ export default {
   h4 {
     color: #454545;
   }
+  .row__divider {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    margin: 0 auto;
+    text-align: center;
+  }
   .holder {
     cursor: pointer !important;
   }
@@ -176,6 +172,14 @@ export default {
     h2 {
       font-size: 1.5rem;
       line-height: 1.5;
+    }
+    h3 {
+      font-size: 1.1rem !important;
+    }
+    h4 {
+      font-size: 1rem;
+      padding-top: 3rem;
+      line-height: 2;
     }
   }
 }
