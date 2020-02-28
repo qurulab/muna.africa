@@ -13,7 +13,7 @@
             <a href="https://medium.com/auctionlance" target="_blank">Blog</a>
           </li>
           <li><nuxt-link to="/">Contact Us</nuxt-link></li>
-          <li><nuxt-link to="/" class="signin--link">Sign In</nuxt-link></li>
+          <!-- <li><nuxt-link to="/" class="signin--link">Sign In</nuxt-link></li> -->
         </ul>
         <div @click.once.prevent="toggleNav()" class="navbar__toggler">
           <font-awesome-icon :icon="['fa', 'bars']" />

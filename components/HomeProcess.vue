@@ -1,6 +1,11 @@
 <template>
   <div class="process">
     <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h4 class="heading--text pb-4">HOW P2P WORKS</h4>
+        </div>
+      </div>
       <div class="row__divider">
         <h3
           ref="buyer"
@@ -118,7 +123,12 @@ export default {
 <style lang="scss" scoped>
 .process {
   background: #fafafa;
+  margin: 3rem 0;
   padding: 4rem 0;
+  .heading--text {
+    font-weight: bold;
+    color: #454545;
+  }
   h3 {
     padding-bottom: 1rem;
     font-size: 1.3rem;
@@ -169,6 +179,7 @@ export default {
 //MEDIA QUERIES
 @media only screen and (max-width: 600px) {
   .process {
+    margin-top: 4rem;
     h2 {
       font-size: 1.5rem;
       line-height: 1.5;

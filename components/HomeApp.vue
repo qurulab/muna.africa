@@ -6,7 +6,11 @@
         Built exclusively on the Waves blockchain for speed, affordability and
         ultra-UX.
       </p>
-      <nuxt-link to="/" class="register__btn">Read Whitepaper</nuxt-link>
+      <a
+        href="https://docs.google.com/document/d/1fQQnasyRHcIZxyWJuHwkr_ZqGefiRmKOMFGdE_5i6_Y/edit?usp=sharing"
+        class="register__btn"
+        >Read Whitepaper</a
+      >
     </div>
   </section>
 </template>
