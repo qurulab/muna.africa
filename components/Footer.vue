@@ -22,28 +22,31 @@
         <div class="footer__card">
           <h6>Connect with us</h6>
           <ul>
-            <li><nuxt-link to="/">KYC</nuxt-link></li>
-            <li><nuxt-link to="/">AML</nuxt-link></li>
-            <li><nuxt-link to="/">Terms of usage</nuxt-link></li>
-            <li><nuxt-link to="/">Privacy Policy</nuxt-link></li>
+            <li><nuxt-link to="/">Facebook</nuxt-link></li>
+            <li><nuxt-link to="/">Twitter</nuxt-link></li>
+            <li><nuxt-link to="/">Telegram</nuxt-link></li>
+            <li><nuxt-link to="/">Instagram</nuxt-link></li>
           </ul>
         </div>
       </div>
       <div class="row pt-5 footer__bottom">
         <div class="col-12">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis
-            voluptates ratione ullam quod fugiat quas nihil eligendi repudiandae
-            assumenda non commodi quisquam ducimus voluptate facilis ad
-            explicabo maxime cupiditate sint, alias perferendis libero, ab
-            tempore eveniet distinctio. Magni eius veritatis voluptatem, tenetur
-            quibusdam excepturi doloribus quia eveniet maiores veniam saepe
-            ratione delectus, laudantium expedita odio! Perferendis fuga,
-            adipisci odio natus iusto nobis! Similique illo eveniet tempore
-            officiis est ab voluptatum fuga, labore autem, qui quasi nemo
-            reiciendis cupiditate quis? Ipsam rerum vitae earum quisquam dolores
-            voluptatem aperiam praesentium saepe consequatur, ea qui odit nam
-            sed repudiandae illo. Pariatur, maiores accusantium!
+            Trading cryptocurrencies involves significant risk and can result in
+            the loss of your invested capital. You should not invest more than
+            you can afford to lose and should ensure that you fully understand
+            the risks involved. Before trading, please take into consideration
+            your level of experience, investment objectives, and seek
+            independent financial advice if necessary. It is the responsibility
+            of the Client to ascertain whether they are permitted to use Muna -
+            Stable coin wallet on the legal requirements in their country of
+            residence.
+            <br />
+            The information on this site is not directed at residents of the
+            United States, Canada, Singapore, Japan, Australia, and New Zealand
+            or any particular country or jurisdiction where such distribution or
+            use would be contrary to local law or regulation. Made with love in
+            Africa"
           </p>
         </div>
       </div>

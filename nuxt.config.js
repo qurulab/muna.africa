@@ -4,9 +4,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title:
-      process.env.npm_package_name ||
-      'Muna stable coin wallet, send, receive and stake',
+    title: 'Muna - Stable coin wallet ',
     meta: [
       {
         charset: 'utf-8'
