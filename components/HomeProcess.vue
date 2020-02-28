@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h4 class="heading--text pb-4">HOW P2P WORKS</h4>
+          <h4 class="heading--text pb-4">How Muna P2P works</h4>
         </div>
       </div>
       <div class="row__divider">
@@ -28,8 +28,7 @@
         <div class="col-md-1"></div>
         <div class="col-md-10">
           <h4 class="pt-4">
-            Muna P2P helps you convert your money to crypto instantly where
-            Waziri acts as an escrow for safekeeping the transaction
+            Fiat conversion easier, faster & simpler for Africans.
           </h4>
           <div class="row pt-5">
             <div class="col-md-4">
@@ -122,12 +121,13 @@ export default {
 
 <style lang="scss" scoped>
 .process {
-  background: #fafafa;
+  background: #f7faff;
   margin: 3rem 0;
   padding: 4rem 0;
   .heading--text {
     font-weight: bold;
     color: #454545;
+    text-transform: uppercase;
   }
   h3 {
     padding-bottom: 1rem;

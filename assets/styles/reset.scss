@@ -6,9 +6,13 @@
 
 body {
   overflow-x: hidden !important;
-  font-family: 'Comfortaa';
+  font-family: 'Ubuntu';
 }
 
 ul {
   list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
