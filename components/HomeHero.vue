@@ -9,7 +9,7 @@
             coins across Africa. Stake your crypto and earn interest upto 12%
             per year.
           </p>
-          <nuxt-link to="/" class="hero__btn">Get Started </nuxt-link>
+          <nuxt-link to="/" class="hero__btn">Download Whitepaper </nuxt-link>
         </div>
         <div class="col-md-1 col-lg-1"></div>
         <div class="col-lg-5 col-sm-12 col-xs-12 img__holder">
@@ -52,7 +52,7 @@ export default {}
   }
   .hero__btn {
     background: $primary-color;
-    padding: 1.3rem 4.5rem;
+    padding: 1.5rem 4.5rem;
     border-radius: 3px;
     text-decoration: none;
     color: #fff;

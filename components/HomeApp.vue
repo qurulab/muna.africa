@@ -3,8 +3,8 @@
     <div class="app__container">
       <h2>Powered by Waves Platform.</h2>
       <p>
-        Built exclusively on the Waves blockchain for speed, affordability and
-        ultra-UX.
+        Built exclusively on the Waves blockchain for speed, security and
+        saclability
       </p>
       <a
         href="https://docs.google.com/document/d/1fQQnasyRHcIZxyWJuHwkr_ZqGefiRmKOMFGdE_5i6_Y/edit?usp=sharing"

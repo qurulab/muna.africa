@@ -22,10 +22,18 @@
         <div class="footer__card">
           <h6>Connect with us</h6>
           <ul>
-            <li><nuxt-link to="/">Facebook</nuxt-link></li>
-            <li><nuxt-link to="/">Twitter</nuxt-link></li>
-            <li><nuxt-link to="/">Telegram</nuxt-link></li>
-            <li><nuxt-link to="/">Instagram</nuxt-link></li>
+            <li>
+              <a href="https://facebook.com/munawallet">Facebook</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/munawallet">Twitter</a>
+            </li>
+            <li>
+              <a href="https://t.me/munawallet">Telegram</a>
+            </li>
+            <li>
+              <a href="https://instagram.com/munawallet">Instagram</a>
+            </li>
           </ul>
         </div>
       </div>
