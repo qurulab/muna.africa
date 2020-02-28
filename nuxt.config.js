@@ -27,7 +27,7 @@ export default {
       },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Comfortaa&display=swap'
+        href: 'https://fonts.googleapis.com/css?family=Ubuntu&display=swap'
       }
     ]
   },
