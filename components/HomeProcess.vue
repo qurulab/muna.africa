@@ -14,14 +14,14 @@
           v-bind:class="{ present: present }"
           class="holder buyer__holder"
         >
-          Buyer
+          For Buyer
         </h3>
         <h3
           @click="toggleShowBuyer()"
           v-bind:class="{ present: !present }"
           class="holder seller__holder"
         >
-          Seller
+          For Seller
         </h3>
       </div>
       <div id="buyer" v-if="showBuyerFlow" class="row text-center">

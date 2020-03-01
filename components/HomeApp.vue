@@ -49,9 +49,16 @@ export default {}
     color: #545454;
     border: 1px solid #f4f4f4;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1rem;
     // opacity: 0.9;
     font-weight: bold;
+    &:hover {
+      background: #000639;
+      transition: all ease-in-out 0.5s;
+      color: #fff !important;
+      border: none !important;
+      font-weight: normal;
+    }
   }
 }
 </style>
