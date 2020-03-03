@@ -9,7 +9,11 @@
             coins across Africa. Stake your crypto and earn interest upto 12%
             per year.
           </p>
-          <nuxt-link to="/" class="hero__btn">Download Whitepaper </nuxt-link>
+          <a
+            href="https://docs.google.com/document/d/1fQQnasyRHcIZxyWJuHwkr_ZqGefiRmKOMFGdE_5i6_Y/edit?usp=sharing"
+            class="hero__btn"
+            >Read Whitepaper
+          </a>
         </div>
         <div class="col-md-1 col-lg-1"></div>
         <div class="col-lg-5 col-sm-12 col-xs-12 img__holder">
@@ -52,11 +56,15 @@ export default {}
   }
   .hero__btn {
     background: $primary-color;
-    padding: 1.5rem 4.5rem;
+    padding: 1rem 3rem;
     border-radius: 3px;
     text-decoration: none;
     color: #fff;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+    &:hover {
+      background: #000639;
+      transition: all ease-in-out 0.5s;
+    }
   }
   .hero--img {
     animation-name: animate;
