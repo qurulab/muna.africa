@@ -40,7 +40,7 @@ export default {}
   height: 100vh;
   h1 {
     font-weight: bolder;
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     padding-bottom: 1.5rem;
     line-height: 1.5;
     color: #2b2b2b;
