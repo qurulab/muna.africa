@@ -53,18 +53,22 @@ export default {}
   }
   .hero__btn {
     background: $primary-color;
-    padding: 1.3rem 3.5rem;
+    padding: 1.2rem 3.5rem;
     border-radius: 3px;
     text-decoration: none;
     color: #fff;
     font-size: 1.2rem;
+    &:hover {
+      background: #000639;
+      transition: all ease-in-out 0.5s;
+    }
   }
-  .hero--img {
-    animation-name: animate;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-  }
+  // .hero--img {
+  //   animation-name: animate;
+  //   animation-duration: 3s;
+  //   animation-iteration-count: infinite;
+  //   animation-direction: alternate;
+  // }
 }
 
 //Animation
@@ -81,8 +85,12 @@ export default {}
 @media only screen and (max-width: 600px) {
   .hero {
     padding: 10rem 0;
+    text-align: center;
     h1 {
-      font-size: 2rem;
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 0.9rem;
     }
     .img__holder {
       padding-top: 3rem;
