@@ -25,7 +25,7 @@
         <!-- <div class="col-md-1 col-lg-1"></div> -->
         <div class="col-lg-6 col-sm-12 col-xs-12 img__holder">
           <img
-            src="../assets/images/banner-img.svg"
+            src="../assets/images/banner2-img.svg"
             class="img-fluid hero--img"
             alt="Hero Image"
           />

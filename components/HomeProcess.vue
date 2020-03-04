@@ -28,8 +28,9 @@
         <div class="col-md-1"></div>
         <div class="col-md-10">
           <h4 class="pt-4">
-            Muna P2P helps you convert your money to crypto instantly. Secure
-            escrow hold funds for safekeeping of the transaction.
+            Muna P2P helps you convert your
+            <strong>fiat to crypto</strong> instantly. Secure escrow hold funds
+            for safekeeping of the transaction.
           </h4>
           <div class="row pt-5">
             <div class="col-md-4">
@@ -61,8 +62,9 @@
         <div class="col-md-1"></div>
         <div class="col-md-10">
           <h4 class="pt-4">
-            Muna P2P helps you convert your crypto to money instantly. Secure
-            escrow hold funds for safekeeping of the transaction.
+            Muna P2P helps you convert your
+            <strong>crypto to fiat</strong> instantly. Secure escrow hold funds
+            for safekeeping of the transaction.
           </h4>
           <div class="row pt-5">
             <div class="col-md-4">
@@ -137,7 +139,8 @@ export default {
     font-size: 1.3rem;
   }
   h4 {
-    color: #454545;
+    color: #000;
+    line-height: 1.7;
   }
   .row__divider {
     display: grid;
