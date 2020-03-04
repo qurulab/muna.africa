@@ -41,7 +41,7 @@ export default {}
   h1 {
     font-weight: bolder;
     font-size: 2.5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
     line-height: 1.5;
     color: #2b2b2b;
   }
