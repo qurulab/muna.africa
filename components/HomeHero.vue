@@ -18,7 +18,7 @@
         <div class="col-md-1 col-lg-1"></div>
         <div class="col-lg-5 col-sm-12 col-xs-12 img__holder">
           <img
-            src="../assets/images/img2.svg"
+            src="../assets/images/banner-img.svg"
             class="img-fluid hero--img"
             alt="Hero Image"
           />
@@ -66,12 +66,12 @@ export default {}
       transition: all ease-in-out 0.5s;
     }
   }
-  .hero--img {
-    animation-name: animate;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-  }
+  // .hero--img {
+  //   animation-name: animate;
+  //   animation-duration: 3s;
+  //   animation-iteration-count: infinite;
+  //   animation-direction: alternate;
+  // }
 }
 
 //Animation
@@ -87,7 +87,9 @@ export default {}
 //MEDIA QUERIES
 @media only screen and (max-width: 600px) {
   .hero {
-    padding: 10rem 0;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    text-align: center;
     h1 {
       font-size: 1.5rem;
     }
@@ -95,7 +97,7 @@ export default {}
       font-size: 0.85rem;
     }
     .img__holder {
-      padding-top: 3rem;
+      padding-top: 6rem;
       margin: auto;
     }
     .hero--img {

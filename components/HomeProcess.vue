@@ -28,28 +28,28 @@
         <div class="col-md-1"></div>
         <div class="col-md-10">
           <h4 class="pt-4">
-            Fiat conversion easier, faster & simpler for Africans.
+            Muna P2P helps you convert your money to crypto instantly. Secure
+            escrow hold funds for safekeeping of the transaction.
           </h4>
           <div class="row pt-5">
             <div class="col-md-4">
               <img src="../assets/images/order.png" class="icons" alt="" />
               <h6>Step 1</h6>
               <h5>PLACE AN ORDER</h5>
-              <p>You'll be auto-matched with a seller instantly</p>
+              <p>You’ll find a seller instantly</p>
             </div>
             <div class="col-md-4">
               <img src="../assets/images/bag.png" class="icons" alt="" />
               <h6>Step 2</h6>
               <h5>PAY DIRECTLY TO SELLER</h5>
-              <p>The seller will confirm your payment</p>
+              <p>TThe seller will confirm your payment</p>
             </div>
             <div class="col-md-4">
               <img src="../assets/images/wallet.svg" class="icons" alt="" />
               <h6>Step 3</h6>
-              <h5>MUNA RELEASES THE ESCROWED USDT</h5>
+              <h5>MUNA RELEASES THE ESCROWED CRYPTO</h5>
               <p>
-                It makes Muna P2P a safe and fast method to convert fiat to
-                crypto
+                Transaction is fast and safely completed
               </p>
             </div>
           </div>
@@ -61,29 +61,32 @@
         <div class="col-md-1"></div>
         <div class="col-md-10">
           <h4 class="pt-4">
-            Muna P2P helps you convert your money to crypto instantly where
-            Waziri acts as an escrow for safekeeping the transaction
+            Muna P2P helps you convert your crypto to money instantly. Secure
+            escrow hold funds for safekeeping of the transaction.
           </h4>
           <div class="row pt-5">
             <div class="col-md-4">
-              <img src="../assets/images/debit.svg" class="icons" alt="" />
+              <img src="../assets/images/order.png" class="icons" alt="" />
               <h6>Step 1</h6>
               <h5>PLACE AN ORDER</h5>
-              <p>You'll be auto-matched with a seller instantly</p>
+              <p>You’ll find a buyer instantly</p>
             </div>
             <div class="col-md-4">
-              <img src="../assets/images/debit.svg" class="icons" alt="" />
+              <img src="../assets/images/bag.png" class="icons" alt="" />
               <h6>Step 2</h6>
-              <h5>PAY DIRECTLY TO SELLER</h5>
-              <p>The seller will confirm your payment</p>
+              <h5>CONFIRM RECEIVING THE PAYMENT</h5>
+              <p>
+                Muna will transfer the crypto to the buyer only after you
+                acknowledge receiving your payment
+              </p>
             </div>
             <div class="col-md-4">
-              <img src="../assets/images/debit.svg" class="icons" alt="" />
+              <img src="../assets/images/wallet.svg" class="icons" alt="" />
               <h6>Step 3</h6>
-              <h5>MUNA RELEASES THE ESCROWED USDT</h5>
+              <h5>MUNA RELEASES THE ESCROWED CRYPTO</h5>
               <p>
-                It makes Muna P2P a safe and fast method to convert fiat to
-                crypto
+                Muna escrow will push crypto to wallet of buyer. Transactions
+                are safe and fast.
               </p>
             </div>
           </div>
@@ -122,7 +125,7 @@ export default {
 <style lang="scss" scoped>
 .process {
   background: #f7faff;
-  margin: 3rem 0;
+  // margin: 3rem 0;
   padding: 4rem 0;
   .heading--text {
     font-weight: bold;
@@ -179,7 +182,6 @@ export default {
 //MEDIA QUERIES
 @media only screen and (max-width: 600px) {
   .process {
-    margin-top: 4rem;
     h2 {
       font-size: 1.5rem;
       line-height: 1.5;

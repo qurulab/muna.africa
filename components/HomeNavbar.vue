@@ -5,17 +5,35 @@
         class="navbar__contents d-flex justify-content-between align-items-center"
       >
         <div class="navbar__logo">
-          <h5><nuxt-link to="/" class="logo">Muna</nuxt-link></h5>
+          <h4>
+            <nuxt-link to="/" class="logo"
+              ><img
+                src="../assets/images/logo.svg"
+                class="logo__img"
+                alt="Logo image"
+              />
+              Muna Wallet</nuxt-link
+            >
+          </h4>
         </div>
         <ul class="nav__links d-flex justify-content-between pt-3">
-          <li><nuxt-link to="#features">Features</nuxt-link></li>
+          <li>
+            <nuxt-link to="#features" class="nav-links">Features</nuxt-link>
+          </li>
           <li>
             <a href="https://medium.com/auctionlance" target="_blank">Blog</a>
           </li>
-          <li><nuxt-link to="/">Contact Us</nuxt-link></li>
+          <li>
+            <a
+              href="https://t.me/munawallet"
+              class="telegram--link"
+              target="_blank"
+              >Join Telegram Discussion</a
+            >
+          </li>
           <!-- <li><nuxt-link to="/" class="signin--link">Sign In</nuxt-link></li> -->
         </ul>
-        <div @click.once.prevent="toggleNav()" class="navbar__toggler">
+        <div @click.prevent="toggleNav()" class="navbar__toggler">
           <font-awesome-icon :icon="['fa', 'bars']" />
         </div>
       </div>
@@ -29,8 +47,12 @@ export default {
     toggleNav() {
       const navbarToggler = document.querySelector('.navbar__toggler')
       const nav = document.querySelector('.nav__links')
+      const navItems = document.querySelector('.nav-links')
       navbarToggler.addEventListener('click', () => {
         nav.classList.toggle('open__nav')
+      })
+      navItems.addEventListener('click', () => {
+        nav.classList.remove('open__nav')
       })
     }
   }
@@ -51,6 +73,10 @@ nav {
     text-decoration: none;
     padding-top: 0.5rem;
   }
+  .logo__img {
+    max-width: 40px;
+    height: auto;
+  }
   ul {
     li a {
       text-decoration: none;
@@ -60,12 +86,16 @@ nav {
       opacity: 0.9;
       font-size: 0.9rem;
     }
-    .signin--link {
+    .telegram--link {
       border-radius: 3px;
       background: $primary-color;
       color: #fff;
       padding: 1rem 2.3rem;
       font-weight: normal;
+      &:hover {
+        background: #000639;
+        transition: all ease-in-out 0.5s;
+      }
     }
   }
   .navbar__toggler {
