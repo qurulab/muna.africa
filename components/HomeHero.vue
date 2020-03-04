@@ -12,11 +12,11 @@
           <a
             href="https://docs.google.com/document/d/1fQQnasyRHcIZxyWJuHwkr_ZqGefiRmKOMFGdE_5i6_Y/edit?usp=sharing"
             class="hero__btn"
-            >Read Whitepaper
+            >Read Whitepaper&nbsp;&nbsp;
           </a>
         </div>
-        <div class="col-md-1 col-lg-1"></div>
-        <div class="col-lg-5 col-sm-12 col-xs-12 img__holder">
+        <!-- <div class="col-md-1 col-lg-1"></div> -->
+        <div class="col-lg-6 col-sm-12 col-xs-12 img__holder">
           <img
             src="../assets/images/banner-img.svg"
             class="img-fluid hero--img"
@@ -38,25 +38,22 @@ export default {}
   padding: 13rem 0;
   background: #fff;
   height: 100vh;
-  width: 100%;
   h1 {
     font-weight: bolder;
-    font-size: 2.5rem;
-    padding-bottom: 2rem;
+    font-size: 2.6rem;
+    padding-bottom: 1.5rem;
     line-height: 1.5;
-    color: #403e54;
-    font-weight: bold;
+    color: #2b2b2b;
   }
   p {
-    opacity: 0.9;
+    opacity: 0.8;
     padding-bottom: 2rem;
     line-height: 1.8;
-    color: #545454;
-    font-weight: 400;
+    color: #2b2b2b;
   }
   .hero__btn {
     background: $primary-color;
-    padding: 1rem 3rem;
+    padding: 1.2rem 3.5rem;
     border-radius: 3px;
     text-decoration: none;
     color: #fff;
@@ -87,22 +84,16 @@ export default {}
 //MEDIA QUERIES
 @media only screen and (max-width: 600px) {
   .hero {
-    padding-top: 10rem;
-    padding-bottom: 2rem;
+    padding: 10rem 0;
     text-align: center;
     h1 {
       font-size: 1.5rem;
     }
     p {
-      font-size: 0.85rem;
+      font-size: 0.9rem;
     }
     .img__holder {
-      padding-top: 6rem;
-      margin: auto;
-    }
-    .hero--img {
-      max-width: 280px;
-      height: auto;
+      padding-top: 3rem;
     }
   }
 }
