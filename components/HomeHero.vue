@@ -4,11 +4,18 @@
       <div class="row">
         <div class="col-lg-6 col-md-12 col-sm-812 col-xs-12">
           <h1>Africa Stable Coin Wallet, Buy, Sell, Trade, Staking.</h1>
-          <p>
-            Muna Wallet is the easiest way to store, send and receive stable
-            coins across Africa. Stake your crypto and earn interest upto 12%
-            per year.
-          </p>
+          <div class="hero-text pb-5">
+            <p>
+              Buy and sell Crypto instantly with your bank account
+            </p>
+            <p>
+              Secure P2P Fiat Crypto conversion wallet. Safer, cheaper, faster
+              and simpler for Africans!
+            </p>
+            <p>
+              Stake your crypto and earn up to 10% interest per year.
+            </p>
+          </div>
           <a
             href="https://docs.google.com/document/d/1fQQnasyRHcIZxyWJuHwkr_ZqGefiRmKOMFGdE_5i6_Y/edit?usp=sharing"
             class="hero__btn"
@@ -35,7 +42,7 @@ export default {}
 <style lang="scss" scoped>
 @import '../assets/styles/colors';
 .hero {
-  padding: 13rem 0;
+  padding: 12rem 0;
   background: #fff;
   height: 100vh;
   h1 {
@@ -47,9 +54,11 @@ export default {}
   }
   p {
     opacity: 0.8;
-    padding-bottom: 2rem;
-    line-height: 1.8;
+    // padding-bottom: 2rem;
+    // line-height: 1.8;
     color: #2b2b2b;
+    font-size: 0.95rem;
+    font-weight: normal;
   }
   .hero__btn {
     background: $primary-color;

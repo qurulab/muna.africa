@@ -16,14 +16,66 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Stable coin wallet, send, receive and stake'
+        content:
+          'Friendly crypto wallet for stable coins. Borderless digital payments across Africa. With crypto, without volatility!'
+      },
+      {
+        hid: 'title',
+        name: 'title',
+        content: 'Secure stable coins wallet'
+      },
+      // Open Graph / Facebook
+      {
+        property: 'og:type',
+        content: 'website"'
+      },
+      {
+        property: 'og:url',
+        content: 'https://muna.africa'
+      },
+      {
+        property: 'og:title',
+        content: 'Muna — Secure stable coins wallet'
+      },
+      {
+        property: 'og:description',
+        content:
+          'Friendly crypto wallet for stable coins. Borderless digital payments across Africa. With crypto, without volatility!'
+      },
+      {
+        property: 'og:image',
+        content:
+          'https://drive.google.com/file/d/174n8E5dzaBma9uw64F4YDUDBLEjPneML/view'
+      },
+      // Twitter
+      {
+        property: 'twitter:card',
+        content: 'summary_large_image'
+      },
+      {
+        property: 'twitter:url',
+        content: 'https://metatags.io/'
+      },
+      {
+        property: 'twitter:title',
+        content: 'Muna — Secure stable coins wallet'
+      },
+      {
+        property: 'twitter:description',
+        content:
+          'Friendly crypto wallet for stable coins. Borderless digital payments across Africa. With crypto, without volatility!'
+      },
+      {
+        property: 'twitter:image',
+        content:
+          'https://drive.google.com/file/d/174n8E5dzaBma9uw64F4YDUDBLEjPneML/view'
       }
     ],
     link: [
       {
         rel: 'icon',
         type: 'image/x-icon',
-        href: '/favicon.ico'
+        href: '/favicon.svg'
       },
       {
         rel: 'stylesheet',
