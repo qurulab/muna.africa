@@ -185,6 +185,7 @@ export default {
 //MEDIA QUERIES
 @media only screen and (max-width: 600px) {
   .process {
+    padding: 7rem 0;
     h2 {
       font-size: 1.5rem;
       line-height: 1.5;

@@ -3,14 +3,12 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-12 col-sm-812 col-xs-12">
-          <h1>Africa Stable Coin Wallet, Buy, Sell, Trade, Staking.</h1>
+          <h1>Africa Stable Coin Wallet <br />Transfer, P2P Trade, Staking.</h1>
           <div class="hero-text pb-5">
             <p>
-              Buy and sell Crypto instantly with your bank account
-            </p>
-            <p>
-              Secure P2P Fiat Crypto conversion wallet. Safer, cheaper, faster
-              and simpler for Africans!
+              Buy and sell Crypto instantly with your bank account. Secure P2P
+              Fiat Crypto conversion wallet. Safer, cheaper, faster and simpler
+              for Africans!
             </p>
             <p>
               Stake your crypto and earn up to 10% interest per year.
@@ -55,9 +53,9 @@ export default {}
   p {
     opacity: 0.8;
     // padding-bottom: 2rem;
-    // line-height: 1.8;
+    line-height: 1.8;
     color: #2b2b2b;
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: normal;
   }
   .hero__btn {
@@ -102,7 +100,7 @@ export default {}
       font-size: 0.9rem;
     }
     .img__holder {
-      padding-top: 3rem;
+      padding-top: 4.3rem;
     }
   }
 }

@@ -163,7 +163,7 @@ nav {
 //MEDIA QUERIES
 @media only screen and (max-width: 990px) {
   .nav__links {
-    background: #333;
+    background: #000;
     position: absolute;
     top: 100%;
     padding: 4rem 2.5rem;
@@ -176,7 +176,11 @@ nav {
     width: 100%;
     li a {
       line-height: 4;
+      color: #fff;
     }
+  }
+  .telegram--link {
+    border: 1px solid #fff !important;
   }
   .open__nav {
     display: block !important;
@@ -185,6 +189,17 @@ nav {
   .navbar__toggler {
     display: block !important;
     padding-right: 1rem;
+  }
+}
+
+//MEDIA QUERIS FOR THE DROP DOWN MENU ON MOBILE
+@media only screen and (max-width: 400px) {
+  .dropdown__menu {
+    position: static !important;
+    width: 100% !important;
+    li a {
+      color: #fff !important;
+    }
   }
 }
 </style>
