@@ -92,7 +92,7 @@ export default {}
 @media only screen and (max-width: 600px) {
   .hero {
     padding: 10rem 0;
-    text-align: center;
+    // text-align: center;
     h1 {
       font-size: 1.5rem;
     }
