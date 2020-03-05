@@ -92,7 +92,7 @@ footer {
       font-size: 0.85rem;
       line-height: 2;
       color: #545454;
-      opacity: 0.8;
+      opacity: 0.7;
     }
   }
 }
