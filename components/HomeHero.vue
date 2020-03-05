@@ -91,8 +91,8 @@ export default {}
 //MEDIA QUERIES
 @media only screen and (max-width: 600px) {
   .hero {
-    padding: 10rem 0;
-    text-align: center;
+    padding: 11rem 0;
+    // text-align: center;
     h1 {
       font-size: 1.5rem;
     }
@@ -100,7 +100,7 @@ export default {}
       font-size: 0.9rem;
     }
     .img__holder {
-      padding-top: 4.3rem;
+      padding-top: 4.5rem;
     }
   }
 }
