@@ -17,6 +17,28 @@
           </h4>
         </div>
         <ul class="nav__links d-flex justify-content-between pt-3">
+          <li class="dropdown__container">
+            <nuxt-link to="/">Learn</nuxt-link>
+            <ul class="dropdown__menu">
+              <li>
+                <a href="https://en.wikipedia.org/wiki/Stablecoin"
+                  >What is stable coin</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://docs.google.com/document/d/1eyUnLZB1HE2uYx4UNyakaecW9FR9n-yJkTjZJ85MVPo/edit?usp=drivesdk"
+                  >What is Neutrino</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://docs.waves.exchange/en/waves-exchange/waves-exchange-online-desktop/online-desktop-asset/online-desktop-staking#how-to-deposit-assets"
+                  >How staking works</a
+                >
+              </li>
+            </ul>
+          </li>
           <li>
             <nuxt-link to="#features" class="nav-links">Features</nuxt-link>
           </li>
@@ -85,16 +107,50 @@ nav {
       font-weight: bold;
       opacity: 0.9;
       font-size: 0.9rem;
+      // &:hover {
+      //   color: #000639;
+      // }
     }
     .telegram--link {
-      border-radius: 3px;
-      background: $primary-color;
-      color: #fff;
+      border-radius: 4px;
+      background: transparent;
+      // color: #fff;
       padding: 1rem 2.3rem;
       font-weight: normal;
+      border: 1px solid $primary-color;
       &:hover {
         background: #000639;
         transition: all ease-in-out 0.5s;
+        color: #fff;
+        border: none;
+      }
+    }
+  }
+  //Dropdown section
+  .dropdown__container {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown__container:hover .dropdown__menu {
+    display: block !important;
+    transition: all ease-in-out 0.5s;
+  }
+  .dropdown__menu {
+    // box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.13);
+    min-width: 200px;
+    position: absolute;
+    z-index: 1000 !important;
+    display: none;
+    padding: 1rem 0;
+    li a {
+      font-weight: normal;
+      display: block;
+      font-size: 0.9rem;
+      color: #2b2b2b;
+      padding: 0.5rem;
+      &:hover {
+        color: $primary-color;
       }
     }
   }
