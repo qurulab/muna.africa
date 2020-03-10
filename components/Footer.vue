@@ -7,7 +7,7 @@
           <ul>
             <li><nuxt-link to="/">Neutrino Stable coin</nuxt-link></li>
             <li><nuxt-link to="/">API</nuxt-link></li>
-            <li><nuxt-link to="/">Stalking</nuxt-link></li>
+            <li><nuxt-link to="/">Staking</nuxt-link></li>
           </ul>
         </div>
         <div class="footer__card">

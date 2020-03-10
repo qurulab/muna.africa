@@ -48,7 +48,7 @@
           <h4>Stable coin</h4>
           <p>
             Muna supports stable coins pegged to African local currencies which
-            are not open to crypto volatility. Value doesn’t drop.
+            are not open to crypto volatility. Value do not drop.
           </p>
         </div>
         <div class="about__card">

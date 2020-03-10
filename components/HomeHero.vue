@@ -66,7 +66,7 @@ export default {}
     color: #fff;
     font-size: 1.2rem;
     &:hover {
-      background: #000639;
+      background: #74d42f;
       transition: all ease-in-out 0.5s;
     }
   }
