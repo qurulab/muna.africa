@@ -119,10 +119,11 @@ nav {
       font-weight: normal;
       border: 1px solid $primary-color;
       &:hover {
-        background: #000639;
+        background: #74d42f;
         transition: all ease-in-out 0.5s;
         color: #fff;
         border: none;
+        border: 1px solid #74d42f;
       }
     }
   }

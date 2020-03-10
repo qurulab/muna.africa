@@ -43,7 +43,7 @@
               <img src="../assets/images/bag.png" class="icons" alt="" />
               <h6>Step 2</h6>
               <h5>PAY DIRECTLY TO SELLER</h5>
-              <p>TThe seller will confirm your payment</p>
+              <p>The seller will confirm your payment</p>
             </div>
             <div class="col-md-4">
               <img src="../assets/images/wallet.svg" class="icons" alt="" />

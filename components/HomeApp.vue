@@ -53,7 +53,7 @@ export default {}
     // opacity: 0.9;
     font-weight: bold;
     &:hover {
-      background: #000639;
+      background: #49ad01;
       transition: all ease-in-out 0.5s;
       color: #fff !important;
       border: none !important;
