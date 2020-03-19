@@ -116,6 +116,7 @@ export default {
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
     'bootstrap-vue/nuxt',
+    '@neneos/nuxt-animate.css',
     [
       'nuxt-fontawesome',
       {

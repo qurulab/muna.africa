@@ -6,7 +6,7 @@
 
 body {
   overflow-x: hidden !important;
-  font-family: 'Ubuntu';
+  font-family: 'Ubuntu' !important;
 }
 
 ul {
@@ -15,4 +15,10 @@ ul {
 
 html {
   scroll-behavior: smooth;
+}
+.page-enter-active, .page-leave-active{
+  transition: all 0.5s;
+}
+.page-enter, .page-leave-active{
+opacity: 0.5;
 }
