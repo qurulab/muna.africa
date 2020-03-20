@@ -43,6 +43,11 @@
             <nuxt-link to="#features" class="nav-links">Features</nuxt-link>
           </li>
           <li>
+            <nuxt-link to="/newsletter" class="nav-links"
+              >Join Waiting List</nuxt-link
+            >
+          </li>
+          <li>
             <a href="https://medium.com/auctionlance" target="_blank">Blog</a>
           </li>
           <li>
@@ -104,9 +109,9 @@ nav {
       text-decoration: none;
       margin: 0 0.9rem;
       color: $primary-color;
-      font-weight: bold;
+      font-weight: normal;
       opacity: 0.9;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       // &:hover {
       //   color: #000639;
       // }
