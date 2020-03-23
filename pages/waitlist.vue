@@ -1,47 +1,60 @@
 <template>
-  <div class="newsletter">
-    <img src="../assets/images/rect1.svg" class="img-1" alt="" />
-    <img src="../assets/images/rect1.svg" class="img-2" alt="" />
-    <div class="ball ball-1"></div>
-    <div class="ball ball-2"></div>
-    <div class="ball ball-3"></div>
-    <div class="ball ball-4"></div>
-    <div class="ball ball-5"></div>
-    <div class="newsletter__content">
-      <h1>Be the first to know when we officially launch!</h1>
-      <p>
-        Muna wallet helps you Buy and sell Crypto instantly with your bank
-        account, Secure P2P Fiat Crypto conversion that is safer, cheaper,
-        faster and simpler for Africans. You can also stake your crypto and earn
-        up to 10% interest per year. Be the first to know when we go live.
-      </p>
-      <form
-        @submit.prevent="submit()"
-        data-netlify="true"
-        method="post"
-        class="d-flex justify-content-between"
-      >
-        <input
-          v-model="email"
-          type="email"
-          class="form-control"
-          name="email"
-          placeholder="Enter email address here"
-        />
-        <button type="submit" class="newsletter__btn">Subscibe Now</button>
-      </form>
-      <div v-if="success" class="alert alert-success animated fadeInRight">
-        {{ success }}
-      </div>
-      <div v-if="err" class="alert alert-danger animated fadeInRight">
-        {{ err }}
+  <div class="wrapper">
+    <Navbar />
+    <div class="newsletter">
+      <div class="contents">
+        <img src="../assets/images/rect1.svg" class="img-1" alt="" />
+        <img src="../assets/images/rect1.svg" class="img-2" alt="" />
+        <div class="ball ball-1"></div>
+        <div class="ball ball-2"></div>
+        <div class="ball ball-3"></div>
+        <div class="ball ball-4"></div>
+        <div class="ball ball-5"></div>
+        <div class="newsletter__content">
+          <h1>Be the first to know when we officially launch!</h1>
+          <p>
+            Muna wallet helps you Buy and sell Crypto instantly with your bank
+            account, Secure P2P Fiat Crypto conversion that is safer, cheaper,
+            faster and simpler for Africans. You can also stake your crypto and
+            earn up to 10% interest per year. Be the first to know when we go
+            live.
+          </p>
+          <form
+            @submit.prevent="submit()"
+            data-netlify="true"
+            method="post"
+            class="d-flex justify-content-between"
+          >
+            <input
+              v-model="email"
+              type="email"
+              class="form-control"
+              name="email"
+              placeholder="Enter email address here"
+            />
+            <button type="submit" class="newsletter__btn">Subscibe Now</button>
+          </form>
+          <div v-if="success" class="alert alert-success animated fadeInRight">
+            {{ success }}
+          </div>
+          <div v-if="err" class="alert alert-danger animated fadeInRight">
+            {{ err }}
+          </div>
+        </div>
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
+import Navbar from '~/components/HomeNavbar'
+import Footer from '~/components/Footer'
 export default {
+  components: {
+    Navbar,
+    Footer
+  },
   data() {
     return {
       email: null,
@@ -71,20 +84,26 @@ export default {
 
 <style lang="scss" scoped>
 @import 'assets/styles/colors';
+.wrapper {
+  background: #fff;
+  width: 100vw !important;
+  overflow-x: hidden;
+}
 .newsletter {
   position: relative;
   height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: #003e53;
   color: #fff;
   font-family: 'Ubuntu' !important;
+  .contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .newsletter__content {
     max-width: 700px;
     text-align: center;
-    margin: auto 1rem;
+    margin: 13rem 1rem;
     h1 {
       text-transform: uppercase;
       font-weight: bolder;

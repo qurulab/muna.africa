@@ -43,7 +43,7 @@
             <nuxt-link to="#features" class="nav-links">Features</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/newsletter" class="nav-links"
+            <nuxt-link to="/waitlist" class="nav-links"
               >Join Waiting List</nuxt-link
             >
           </li>
