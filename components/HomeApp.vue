@@ -1,15 +1,13 @@
 <template>
   <section class="app">
     <div class="app__container">
-      <h2>Powered by Waves Platform.</h2>
+      <h2>Join The Exclusive Waitlist</h2>
       <p>
-        Built exclusively on the Waves blockchain for speed, security and
-        saclability
+        Join community of user on the waiting list and do more with your crypto
+        once Muna Wallet is launched soon. Don’t get left behind!
       </p>
-      <a
-        href="https://docs.google.com/document/d/1fQQnasyRHcIZxyWJuHwkr_ZqGefiRmKOMFGdE_5i6_Y/edit?usp=sharing"
-        class="register__btn"
-        >Read Whitepaper</a
+      <nuxt-link to="/waitlist" class="register__btn"
+        >Join The Waitlist</nuxt-link
       >
     </div>
   </section>
