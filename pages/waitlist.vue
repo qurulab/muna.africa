@@ -19,6 +19,12 @@
             earn up to 10% interest per year. Be the first to know when we go
             live.
           </p>
+          <div v-if="success" class="alert alert-success animated fadeInRight">
+            {{ success }}
+          </div>
+          <div v-if="err" class="alert alert-danger animated fadeInRight">
+            {{ err }}
+          </div>
           <form
             @submit.prevent="submit()"
             data-netlify="true"
@@ -34,15 +40,10 @@
             />
             <button type="submit" class="newsletter__btn">Subscibe Now</button>
           </form>
-          <div v-if="success" class="alert alert-success animated fadeInRight">
-            {{ success }}
-          </div>
-          <div v-if="err" class="alert alert-danger animated fadeInRight">
-            {{ err }}
-          </div>
         </div>
       </div>
     </div>
+    <br />
     <Footer />
   </div>
 </template>
@@ -91,7 +92,7 @@ export default {
 }
 .newsletter {
   position: relative;
-  height: 100vh;
+  height: auto;
   background: #003e53;
   color: #fff;
   font-family: 'Ubuntu' !important;
@@ -103,7 +104,7 @@ export default {
   .newsletter__content {
     max-width: 700px;
     text-align: center;
-    margin: 13rem 1rem;
+    margin: 10rem 1rem;
     h1 {
       text-transform: uppercase;
       font-weight: bolder;
@@ -119,9 +120,8 @@ export default {
     }
     form {
       margin-top: 3rem;
-      margin-bottom: 2rem;
       input {
-        max-width: 750%;
+        width: 75%;
         height: 3.7rem;
         border-radius: 0px;
         box-shadow: none;
@@ -199,18 +199,26 @@ export default {
 
 //MEDIA QUERIES FOR SMALL SCREENS
 @media only screen and (max-width: 600px) {
+  .wrapper {
+    height: 100%;
+  }
   .newsletter__content {
     h1 {
       font-size: 1.5rem !important;
+    }
+    .newsletter__content {
+      margin: 12rem 1rem;
     }
     form {
       flex-direction: column;
       input {
         margin-bottom: 1rem;
+        width: 100% !important;
       }
       .newsletter__btn {
         width: 100% !important;
         height: 3.7rem;
+        margin-bottom: 4rem;
       }
     }
   }
