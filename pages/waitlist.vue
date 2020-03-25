@@ -25,12 +25,7 @@
           <div v-if="err" class="alert alert-danger animated fadeInRight">
             {{ err }}
           </div>
-          <form
-            @submit.prevent="submit()"
-            data-netlify="true"
-            method="post"
-            class="d-flex justify-content-between"
-          >
+          <form @submit.prevent="submit()" data-netlify="true" method="post">
             <input
               v-model="email"
               type="email"
@@ -38,7 +33,7 @@
               name="email"
               placeholder="Enter email address here"
             />
-            <button type="submit" class="newsletter__btn">Subscibe Now</button>
+            <input type="submit" value="Submit" />
           </form>
         </div>
       </div>
@@ -120,16 +115,17 @@ export default {
     }
     form {
       margin-top: 3rem;
+      display: flex;
       input {
-        width: 75%;
+        flex: 12;
         height: 3.7rem;
         border-radius: 0px;
         box-shadow: none;
         outline: none;
       }
-      .newsletter__btn {
-        padding: auto 2rem;
-        width: 25%;
+      input[type='submit'] {
+        // padding: auto 2rem;
+        flex: 3;
         border: none;
         background: $primary-color;
         color: #fff;
@@ -212,13 +208,11 @@ export default {
     form {
       flex-direction: column;
       input {
+        padding: 1.5rem 1rem;
         margin-bottom: 1rem;
-        width: 100% !important;
       }
-      .newsletter__btn {
-        width: 100% !important;
-        height: 3.7rem;
-        margin-bottom: 4rem;
+      input[type='submit'] {
+        padding: 1.2rem 0rem;
       }
     }
   }
