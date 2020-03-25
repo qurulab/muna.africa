@@ -62,7 +62,7 @@ export default {
     submit() {
       if (this.email) {
         this.success =
-          'You have successfully subscirbed to our email notification. We promie not to spam you!'
+          'You have successfully subscirbed to our email notification. We promise not to spam you!'
         this.removeAlert()
       } else {
         this.err = 'Please provide your email address here'
